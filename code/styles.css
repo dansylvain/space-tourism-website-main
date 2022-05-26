@@ -267,6 +267,10 @@ body {
   margin: 0 0.5rem;
 }
 
+.mini-cercle:hover {
+background-color: var(--color-grey);
+}
+
 .mini-cercle2 {
   display: flex;
   position: relative;
@@ -277,6 +281,10 @@ body {
   margin: 0.5rem 0;
   justify-content: center;
   align-items: center;
+}
+
+.mini-cercle2:hover {
+  background-color: var(--color-grey);
 
 }
 
