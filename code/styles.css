@@ -8,9 +8,162 @@
   --color-black: rgb(11,13,23);
   --color-blue: rgb(	208, 214, 249);
   --color-white: rgb(255, 255, 255);
+  --color-grey: rgb(255, 255, 255, 0.5);
 }
 
 body {
   background-color: var(--color-black);
-  color: var(--color-white)
+  color: var(--color-white);
+  padding: 2rem;
+  font-weight: 100;
+  font-family: 'Bellefair', serif;
+  font-size: 1rem;
+  }
+
+/* ***********************
+*********** Fonts ********
+*********************** */
+
+.black {
+  color: var(--color-black);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.grey {
+  color: var(--color-grey);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.bg-grey {
+  background-color: var(--color-grey);
+}
+
+.h1 {
+  font-family: 'Bellefair', serif;
+  font-size: 9.375rem;
+  text-transform: uppercase;
+
+}
+
+.h2 {
+  font-family: 'Bellefair', serif;
+  font-size: 6.25rem;
+  text-transform: uppercase;
+ 
+}
+
+.h3 {
+  font-family: 'Bellefair', serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+
+}
+
+.h4 {
+  font-family: 'Bellefair', serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+}
+
+.h5 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.75rem;
+  letter-spacing: 0.296875rem;
+  color: var(--color-blue);
+  text-transform: uppercase;
+}
+
+.subH1 {
+  font-family: 'Bellefair', serif;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+
+}
+
+.subH2 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 0.875rem;
+  letter-spacing: 0.146875rem;
+  text-transform: uppercase;
+
+}
+
+.navText {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.16875rem;
+  text-transform: uppercase;
+
+}
+
+.bodyText {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.16875rem; 
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+/* *************************
+*********** DISPLAY ********
+************************* */
+
+
+.flex {
+  display: flex;
+}
+
+.flex-hr{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pad-hr{
+  padding: 0 1rem;
+}
+
+.m-bot{
+  margin-bottom: 2rem;
+}
+
+.DM-table{
+  width:100%;
+  border-spacing: 1rem;
+}
+
+
+.DM-table-colors {
+  height: 5rem;
+  vertical-align: bottom;
+}
+
+.DM-table-colors td {
+  padding: 0 0 1rem 1rem;
+  border: 1px solid var(--color-white);
+
+
 }
