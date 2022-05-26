@@ -1,0 +1,117 @@
+body, html {
+  margin: 0;
+  width: 100%;
+  background-color: rgb(11, 13, 23);
+  color: rgb(255, 255, 255);
+  font-weight: 100;
+  box-sizing: border-box;
+}
+
+/********************************/
+/***********  display ***********/
+/********************************/
+
+.flexContainer {
+  display:flex;
+}
+
+.alignItemsCenter {
+  align-items: center;
+}
+
+.justifyContentSpaceBetween {
+  justify-content: space-between;
+}
+
+.margin1rem {
+  margin: 1rem;
+}
+
+.margin2rem {
+  margin: 2rem;
+}
+
+.svgSize4rem {
+  background-size: 4rem;
+  height: 4rem;
+  width: 4rem;
+}
+
+
+/*****************************/
+/*********** Fonts ***********/
+/*****************************/
+
+.fontFamBarlow {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.fontFamBellefair {
+  font-family: 'Bellefair', serif;
+}
+
+.fontColorBlue {
+  color: rgb(208, 214, 249);
+}
+
+.fontColorBlack {
+  color: rgb(11, 13, 23);
+}
+
+.fontColorWhite {
+  color: rgb(255, 255, 255);
+}
+
+.fontColorGrey {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.fontSize1 {
+  font-size: 9.375rem;
+}
+
+.fontSize2 {
+  font-size: 6.25rem;
+}
+
+.fontSize3 {
+  font-size: 3.5rem;
+}
+
+.fontSize4 {
+  font-size: 2rem;
+}
+
+.fontSize5 {
+  font-size: 1.75rem;
+}
+
+.fontSizeSub1 {
+  font-size: 1.75rem;
+}
+
+.fontSizeSub2 {
+  font-size: 0.875rem;
+}
+
+.fontSizeNav {
+  font-size: 1rem;
+}
+
+.fontSizeBodyText {
+  font-size: 1rem;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.letterSpacing4 {
+  letter-spacing: 0.3rem;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
