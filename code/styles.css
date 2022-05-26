@@ -141,9 +141,9 @@ body {
   vertical-align: middle;
 }
 
-/* *************************
-*********** DISPLAY ********
-************************* */
+/* *************************************
+*********** DISPLAY DESIGN MODEL********
+************************************* */
 
 .flex {
   display: flex;
@@ -153,12 +153,24 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  vertical-align: middle;
 }
 
 .flex-nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.flex-nav2 {
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
+}
+
+.flex-nav2 p {
+  margin: 0 1rem;
+  padding: 1rem 0;
 }
 
 .flex-nav p {
@@ -176,8 +188,26 @@ body {
   align-items: center;
 }
 
+.hr-mescouilles {
+position: relative;
+left: 2rem;
+  width:20%;
+padding-left: 4rem;
+z-index: 2;
+border: 1px solid var(--color-darkGrey)
+
+}
+
+.z100{
+  z-index: 100;
+}
+
 .pad-hr {
   padding: 0 1rem;
+}
+
+.m-left {
+  margin-left: 10rem;
 }
 
 .m-bot {
@@ -295,5 +325,17 @@ background-color: var(--color-grey);
   vertical-align: middle;
   justify-content: center;
   align-items: center;
+}
 
+
+/* *************************************
+*********** DISPLAY INDEX **************
+************************************* */
+
+.blur {
+  backdrop-filter: blur(4px);
+}
+
+.index-image {
+  background-image: url(assets/home/background-home-desktop.jpg);
 }
