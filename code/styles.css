@@ -251,6 +251,18 @@ border: 1px solid var(--color-darkGrey)
   margin: 1rem;
 }
 
+.vehicule-column1 {
+  width: 15%
+}
+
+.vehicule-column2 {
+  width: 50%
+}
+
+.vehicule-column3 {
+  width: 35%
+}
+
 .DM-navBarDemo-item:active {
   border-bottom: 2px solid var(--color-white);
 }
@@ -365,3 +377,10 @@ background-color: var(--color-grey);
 .absolute {
 position: absolute;
 }
+
+.vehiculePix{
+/* position: absolute; */
+position:relative;
+
+;
+  }
