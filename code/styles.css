@@ -1,14 +1,16 @@
-*{
-  margin:0;
+* {
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 :root {
-  --color-black: rgb(11,13,23);
-  --color-blue: rgb(	208, 214, 249);
+  --color-black: rgb(11, 13, 23);
+  --color-blue: rgb(208, 214, 249);
   --color-white: rgb(255, 255, 255);
   --color-grey: rgb(255, 255, 255, 0.5);
+  --color-darkGrey: rgb(255, 255, 255, 0.1);
+  --color-darkGrey2: rgb(255, 255, 255, 0);
 }
 
 body {
@@ -16,9 +18,9 @@ body {
   color: var(--color-white);
   padding: 2rem;
   font-weight: 100;
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 1rem;
-  }
+}
 
 /* ***********************
 *********** Fonts ********
@@ -40,6 +42,9 @@ body {
   color: var(--color-grey);
 }
 
+.darkGrey {
+  color: var(--color-darkGrey);
+}
 .bg-black {
   background-color: var(--color-black);
 }
@@ -56,111 +61,137 @@ body {
   background-color: var(--color-grey);
 }
 
+.bg-darkGrey {
+  background-color: var(--color-darkGrey);
+}
+
 .h1 {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 6.5rem;
   text-transform: uppercase;
-
 }
 
 .h2 {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 5rem;
   text-transform: uppercase;
- 
 }
 
 .h3 {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 2.5rem;
   text-transform: uppercase;
-
 }
 
 .h4 {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 2rem;
   text-transform: uppercase;
-
 }
 
 .h5 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.8rem;
-  letter-spacing: 0.296875rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
   color: var(--color-blue);
   text-transform: uppercase;
 }
 
 .subH1 {
-  font-family: 'Bellefair', serif;
+  font-family: "Bellefair", serif;
   font-size: 1.75rem;
   text-transform: uppercase;
-
 }
 
 .subH2 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 0.5rem;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
   letter-spacing: 0.146875rem;
   text-transform: uppercase;
-
 }
 
 .subH3 {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
-  color: var(--color-blue)
+  color: var(--color-blue);
 }
 
 .navText {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.16875rem;
   text-transform: uppercase;
-
 }
 
 .bodyText {
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 1rem;
-  letter-spacing: 0.16875rem; 
+  letter-spacing: 0.16875rem;
 }
 
 .bold {
   font-weight: 700;
 }
 
+.center {
+  text-align: center;
+}
 
+.valign {
+  vertical-align: middle;
+}
 
 /* *************************
 *********** DISPLAY ********
 ************************* */
 
-
 .flex {
   display: flex;
 }
 
-.flex-hr{
+.flex-hr {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 
-.pad-hr{
+.flex-nav {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-nav p {
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+
+.flex-top {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pad-hr {
   padding: 0 1rem;
 }
 
-.m-bot{
+.m-bot {
   margin-bottom: 2rem;
 }
 
-.DM-table{
-  width:100%;
-  border-spacing: 1rem;
+.m-bot1 {
+  margin-bottom: 1rem;
 }
 
+.DM-table {
+  width: 100%;
+  border-spacing: 1rem;
+}
 
 .DM-table-colors {
   height: 5rem;
@@ -173,5 +204,88 @@ body {
 }
 
 .DM-columns {
-  width:50%;
+  width: 50%;
+  margin: 1rem;
+}
+
+.DM-navBarDemo-item:active {
+  border-bottom: 2px solid var(--color-white);
+}
+
+.DM-navBarDemo p {
+  border-bottom: 2px solid var(--color-darkGrey2);
+}
+
+.DM-navBarDemo-item:hover {
+  border-bottom: 2px solid var(--color-grey);
+  cursor: pointer;
+}
+
+.bouton-rond {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 6rem;
+  background: var(--color-white);
+  cursor: pointer;
+}
+
+.bouton-rond:hover {
+  background-color: var(--color-grey);
+}
+
+.DM-text-bouton {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+}
+
+.DM-bouton-rond-gris {
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 10rem;
+  background: var(--color-darkGrey);
+}
+
+.sliders1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mini-cercle {
+  position: relative;
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+}
+
+.mini-cercle2 {
+  display: flex;
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sliders2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  align-items: center;
+
 }

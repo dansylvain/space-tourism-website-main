@@ -13,6 +13,11 @@
       rel="stylesheet"
     />
 
+    <script
+      src="https://kit.fontawesome.com/3dd39fb56b.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -60,7 +65,7 @@
       <span class="grey bodytext bold">02</span> typographie
     </p>
 
-    <div class="flex flex-hr m-bot">
+    <div class="flex flex-top m-bot">
       <div class="DM-columns">
         <p class="subH3">Heading 1 - Bellefair Regular - 150px</p>
         <p class="h1 m-bot">Earth</p>
@@ -78,16 +83,16 @@
 
       <div class="DM-columns">
         <p class="subH3">Subheading 1 - Bellefair Regular - 28px</p>
-        <p class="m-bot">384,400 KM</p>
+        <p class="m-bot subH1">384,400 KM</p>
         <p class="subH3">
           Subheading 2 - Barlow Condensed Regular - 14px - 2.35 Character Space
         </p>
-        <p class="m-bot">avg. distance</p>
+        <p class="m-bot subH2">avg. distance</p>
         <p class="subH3">
           Nav Text - Barlow Condensed Regular - 16px - 2.7 Character Space
         </p>
-        <p class="m-bot">europa</p>
-        <p class="grey bold m-bot">body text</p>
+        <p class="m-bot navText">europa</p>
+        <p class="grey bold m-bot bodyText">Body Text</p>
         <p>
           Sed ut perspiciatis unde omnis iste natus error sit voluptatem
           accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
@@ -97,10 +102,8 @@
           qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
           dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed
           quia non numquam eius modi tempora incidunt ut labore et dolore magnam
-          aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
-          exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
-          ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in
-          ea voluptate velit esse quam nihil molestiae consequatur, vel illum
+          aliquam quaerat voluptatem. Quis autem vel eum iure reprehenderit qui
+          in ea voluptate velit esse quam nihil molestiae consequatur, vel illum
           qui dolorem eum fugiat quo voluptas nulla pariatur?
         </p>
       </div>
@@ -110,43 +113,60 @@
       <span class="grey bodytext bold">03</span> interactive elements
     </p>
 
-    <p><span>00</span>active</p>
-    <p><span>01</span>hovered</p>
-    <p><span>02</span>idle</p>
-    <p>Different States of Navigation Bar</p>
-
-    <div>
-      <div class="bouton-rond">
-        <p>explore</p>
-      </div>
-      <p>Landing Page Main Button - Idle</p>
-
-      <div class="bouton-gris">
-        <div class="bouton-rond">
-          <p>explore</p>
-        </div>
-      </div>
-      <p>Landing Page Main Button - Hover</p>
+    <div class="navText flex flex-nav bg-darkGrey DM-navBarDemo m-bot">
+      <p class="DM-navBarDemo-item"><span class="bold">00</span> active</p>
+      <p class="DM-navBarDemo-item"><span class="bold">01</span> hovered</p>
+      <p class="DM-navBarDemo-item"><span class="bold">02</span> idle</p>
     </div>
 
-    <div>
-      <div>
-        <ul>
-          <li>moon</li>
-          <li>mars</li>
-          <li>europa</li>
-        </ul>
-        <p>Tabs (Active, Hover & Idle)</p>
-      </div>
+    <p class="subH3 m-bot center">Different States of Navigation Bar</p>
 
-      <div>
-        <!-- voir comment insérer des icônes ici!!! -->
-        <p>Slider 1 States (Active, Hover & Idle)</p>
-      </div>
+    <div class="flex flex-top">
+      <div class="flex flex-column DM-columns">
+        <div class="bouton-rond DM-text-bouton m-bot">
+          <p class="h4 black DM-text-bouton">explore</p>
+        </div>
+        <p class="subH3 m-bot center">Landing Page Main Button - Idle</p>
 
-      <div>
-        <!-- voir comment insérer des icônes ici!!! -->
-        <p>Slider 2 States (Active, Hover & Idle)</p>
+        <div class="DM-bouton-rond-gris m-bot">
+          <div class="bouton-rond DM-text-bouton">
+            <p class="h4 black">explore</p>
+          </div>
+        </div>
+        <p class="subH3 m-bot center">Landing Page Main Button - Hover</p>
+      </div>
+      <div class="DM-columns">
+        <div>
+          <div class="navText flex flex-nav DM-navBarDemo m-bot1">
+            <p class="DM-navBarDemo-item">moon</p>
+            <p class="DM-navBarDemo-item">mars</p>
+            <p class="DM-navBarDemo-item">europa</p>
+          </div>
+
+          <p class="subH3 m-bot center">Tabs (Active, Hover & Idle)</p>
+        </div>
+
+        <div>
+          <div class="sliders1 m-bot">
+            <div class="bg-white mini-cercle"></div>
+            <div class="bg-grey mini-cercle"></div>
+            <div class="bg-darkGrey mini-cercle"></div>
+          </div>
+          <p class="subH3 m-bot center">
+            Slider 1 States (Active, Hover & Idle)
+          </p>
+        </div>
+
+        <div>
+          <div class="sliders2 m-bot">
+            <div class="bg-white mini-cercle2"><p class="h3 center black">1</p></div>
+            <div class="bg-grey mini-cercle2"><p class="h3 center white valign">2</p></div>
+            <div class="bg-darkGrey mini-cercle2"><p class="h3 center white">3</p></div>
+          </div>
+          <p class="subH3 m-bot center">
+            Slider 2 States (Active, Hover & Idle)
+          </p>
+        </div>
       </div>
     </div>
   </body>
