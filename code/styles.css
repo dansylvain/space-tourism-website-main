@@ -1,0 +1,16 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-black: rgb(11,13,23);
+  --color-blue: rgb(	208, 214, 249);
+  --color-white: rgb(255, 255, 255);
+}
+
+body {
+  background-color: var(--color-black);
+  color: var(--color-white)
+}
