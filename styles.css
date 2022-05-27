@@ -353,8 +353,7 @@ background-color: var(--color-grey);
 }
 
 .mini-cercle2:hover {
-  background-color: var(--color-grey);
-
+  border: 1px solid var(--color-white);  
 }
 
 .sliders2 {
