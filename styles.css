@@ -375,7 +375,30 @@ background-color: var(--color-grey);
 }
 
 .index-image {
-  background-image: url(assets/home/background-home-desktop.jpg);
+  background-image: url(assets/home/background-home-mobile.jpg);
+}
+
+
+
+
+
+@media (max-width:40rem){
+  .hide {
+    display: none;
+  }
+  .show {
+    visibility: visible;
+  }
+}
+
+@media (min-width:40rem){
+  .index-image {
+    background-image: url(assets/home/background-home-desktop.jpg);
+  }
+  .hidden {
+    visibility: hidden;
+  }
+
 }
 
 .destination-image {
